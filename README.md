@@ -22,9 +22,13 @@ final_select.sav - Объект для отбора признаков
  - переходим в Googl Colaboratory
  - Выбираем "Среда выполнения/выполнить все"
  - запуск модели с данными:
+ 
     Path = '/content/cloned-repo/'  # путь к файлам модели
+ 
     t=5 # интервал
+    
     T = 20000  # Сдвиг начальной точки тестов
+    
     y_work=model_work(data_test.iloc[-T-t:-t], Path)
 
 
